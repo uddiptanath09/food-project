@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bites Category</title>
+    <link rel="stylesheet" href="category.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="first-section">
+      <!-- NAVBAR  -->
+      <header>
+        <img src="bg-img/transparent-logo.png" alt="" />
+
+        <nav>
+          <ul>
+            <li><a href="home.html" target="_blank">HOME</a></li>
+            <li class="active"><a href="category.html">CATEGORY</a></li>
+            <li><a href="about.html" target="_blank">ABOUT </a></li>
+            <li><a href="home.html#second-section">SERVICES</a></li>
+            <li><a href="about.html#about">CONTACT</a></li>
+            <!-- <li><button>Order now</button></li> -->
+            <!-- <li><img src="bg-img/transparent-logo.png" alt=""></li> -->
+          </ul>
+        </nav>
+      </header>
+
+      <!-- HERO-SECTION  -->
+
+      <div class="hero-section">
+        <div class="first-part">
+          <h1>Elevate Your Taste Experience</h1>
+          <p>
+            Freshly crafted pizza, burgers, desserts and drinks --- delivered
+            fast amnd made to satisfy every craving. Savor the perfect blend of
+            flavor and freshness with our handcrafted pizzas and gourmet
+            burgers, made to satisfy every craving.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="second-section" id="category-section">
+      <!-- CATEGORY SECTION WRAPPER -->
+      <div class="category-wrapper">
+        
+        <!-- CATEGORY BUTTONS -->
+        <div class="category-buttons-wrapper">
+          <div class="category-buttons">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="pizza">Pizza</button>
+            <button class="category-btn" data-category="burger">Burger</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+            <button class="category-btn" data-category="cold-drinks">Cold Drinks</button>
+          </div>
+          <button class="cart-toggle-btn" id="cartToggle">🛒 Cart</button>
+        </div>
+
+        <!-- PRODUCTS CONTAINER -->
+        <div class="products-container">
+          <!-- PRODUCT CARDS - Hardcoded in HTML -->
+          <div class="products-grid" id="productsGrid">
+            <!-- PIZZA CATEGORY -->
+            <div class="product-card" data-category="pizza all">
+              <div class="product-image"><img src="1.jpg" alt="Margherita Pizza"></div>
+              <div class="product-info">
+                <h3>Margherita Pizza</h3>
+                <p>Classic cheese pizza with fresh mozzarella</p>
+                <div class="product-price"><span class="inr">₹349</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('pizza1', 'Margherita Pizza', 349, '1.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="pizza all">
+              <div class="product-image"><img src="2.jpg"></div>
+              <div class="product-info">
+                <h3>Pepperoni Pizza</h3>
+                <p>Spicy pepperoni with mozzarella blend</p>
+                <div class="product-price"><span class="inr">₹399</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('pizza2', 'Pepperoni Pizza', 399, '2.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="pizza all">
+              <div class="product-image"><img src="3.jpeg"></div>
+              <div class="product-info">
+                <h3>Veggie Supreme</h3>
+                <p>Fresh vegetables with organic toppings</p>
+                <div class="product-price"><span class="inr">₹379</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('pizza3', 'Veggie Supreme', 379, '3.jpeg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="pizza all">
+              <div class="product-image"><img src="4.jpg"></div>
+              <div class="product-info">
+                <h3>BBQ Chicken</h3>
+                <p>Grilled chicken with BBQ sauce</p>
+                <div class="product-price"><span class="inr">₹429</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('pizza4', 'BBQ Chicken', 429, '4.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="pizza all">
+              <div class="product-image"><img src="5.webp"></div>
+              <div class="product-info">
+                <h3>Cheese Blast</h3>
+                <p>Four cheese blend with herbs</p>
+                <div class="product-price"><span class="inr">₹449</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('pizza5', 'Cheese Blast', 449, '5.webp')">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- BURGER CATEGORY -->
+            <div class="product-card" data-category="burger all">
+              <div class="product-image"><img src="6.png" alt="Classic Burger"></div>
+              <div class="product-info">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with lettuce and tomato</p>
+                <div class="product-price"><span class="inr">₹249</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('burger1', 'Classic Burger', 249, '6.png')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="burger all">
+              <div class="product-image"><img src="7.webp" alt="Cheese Burger"></div>
+              <div class="product-info">
+                <h3>Cheese Burger</h3>
+                <p>Double cheese with caramelized onions</p>
+                <div class="product-price"><span class="inr">₹299</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('burger2', 'Cheese Burger', 299, '7.webp')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="burger all">
+              <div class="product-image"><img src="8.jpg" alt="Bacon Burger"></div>
+              <div class="product-info">
+                <h3>Bacon Burger</h3>
+                <p>Crispy bacon with smoky flavor</p>
+                <div class="product-price"><span class="inr">₹329</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('burger3', 'Bacon Burger', 329, '8.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="burger all">
+              <div class="product-image"><img src="9.jpg" alt="Spicy Burger"></div>
+              <div class="product-info">
+                <h3>Spicy Burger</h3>
+                <p>Hot chili sauce with jalapeños</p>
+                <div class="product-price"><span class="inr">₹319</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('burger4', 'Spicy Burger', 319, '9.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="burger all">
+              <div class="product-image"><img src="10.jpg" alt="Mushroom Burger"></div>
+              <div class="product-info">
+                <h3>Mushroom Burger</h3>
+                <p>Fresh mushrooms with garlic mayo</p>
+                <div class="product-price"><span class="inr">₹309</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('burger5', 'Mushroom Burger', 309, '10.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- DESSERTS CATEGORY -->
+            <div class="product-card" data-category="desserts all">
+              <div class="product-image"><img src="11.jpg" alt="Chocolate Cake"></div>
+              <div class="product-info">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate with soft frosting</p>
+                <div class="product-price"><span class="inr">₹199</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('dessert1', 'Chocolate Cake', 199, '11.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="desserts all">
+              <div class="product-image"><img src="12.jpg" alt="Cheesecake"></div>
+              <div class="product-info">
+                <h3>Cheesecake</h3>
+                <p>Creamy New York style cheesecake</p>
+                <div class="product-price"><span class="inr">₹229</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('dessert2', 'Cheesecake', 229, '12.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="desserts all">
+              <div class="product-image"><img src="13.jpg" alt="Ice Cream"></div>
+              <div class="product-info">
+                <h3>Ice Cream Sundae</h3>
+                <p>Vanilla ice cream with fruit toppings</p>
+                <div class="product-price"><span class="inr">₹149</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('dessert3', 'Ice Cream Sundae', 149, '13.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="desserts all">
+              <div class="product-image"><img src="14.jpg" alt="Brownie"></div>
+              <div class="product-info">
+                <h3>Chocolate Brownie</h3>
+                <p>Fudgy brownie with whipped cream</p>
+                <div class="product-price"><span class="inr">₹159</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('dessert4', 'Chocolate Brownie', 159, '14.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="desserts all">
+              <div class="product-image"><img src="15.webp" alt="Pastry"></div>
+              <div class="product-info">
+                <h3>Croissant Pastry</h3>
+                <p>Buttery French croissant with jam</p>
+                <div class="product-price"><span class="inr">₹129</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('dessert5', 'Croissant Pastry', 129, '15.webp')">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- COLD DRINKS CATEGORY -->
+            <div class="product-card" data-category="cold-drinks all">
+              <div class="product-image"><img src="16.webp" alt="Iced Coffee"></div>
+              <div class="product-info">
+                <h3>Iced Coffee</h3>
+                <p>Cold brew coffee with milk</p>
+                <div class="product-price"><span class="inr">₹99</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('drink1', 'Iced Coffee', 99, '16.webp')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="cold-drinks all">
+              <div class="product-image"><img src="17.jpg" alt="Mango Shake"></div>
+              <div class="product-info">
+                <h3>Mango Shake</h3>
+                <p>Fresh mango smoothie with yogurt</p>
+                <div class="product-price"><span class="inr">₹89</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('drink2', 'Mango Shake', 89, '17.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="cold-drinks all">
+              <div class="product-image"><img src="18.JPG" alt="Lemonade"></div>
+              <div class="product-info">
+                <h3>Fresh Lemonade</h3>
+                <p>Freshly squeezed with mint</p>
+                <div class="product-price"><span class="inr">₹79</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('drink3', 'Fresh Lemonade', 79, '18.JPG')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="cold-drinks all">
+              <div class="product-image"><img src="19.jpg" alt="Iced Tea"></div>
+              <div class="product-info">
+                <h3>Iced Tea</h3>
+                <p>Chilled tea with lemon twist</p>
+                <div class="product-price"><span class="inr">₹69</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('drink4', 'Iced Tea', 69, '19.jpg')">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="cold-drinks all">
+              <div class="product-image"><img src="21.jpg" alt="Smoothie Bowl"></div>
+              <div class="product-info">
+                <h3>Italian Cocktails</h3>
+                <p>Classic Italian cocktails are defined by their aperitivo culture & focusing on bittersweet</p>
+                <div class="product-price"><span class="inr">₹119</span></div>
+                <button class="add-to-cart-btn" onclick="addToCart('drink5', 'Smoothie Bowl', 119, '21.jpg')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CART SECTION (loaded from cart.html) -->
+      <div id="cartRoot"></div>
+
+      <!-- FOOD DESCRIPTION MODAL -->
+      <div class="food-modal" id="foodModal">
+        <div class="food-modal-content">
+          <button class="close-modal" id="closeModal">&times;</button>
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="Food">
+          </div>
+          <div class="modal-info">
+            <h2 id="modalName"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-price">
+              <span id="modalPrice"></span>
+            </div>
+            <button class="modal-add-btn" id="modalAddBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="third-section" id="third-section">
+      <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <p>
+            Your favorite destination for delicious food delivered fast to your
+            doorstep.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Available In</h4>
+          <ul class="locations-list">
+            <li>USA</li>
+            <li>UK</li>
+            <li>Mexico</li>
+            <li>Japan</li>
+            <li>China</li>
+            <li>India</li>
+            <li>Italy</li>
+          </ul>
+          <div class="contact-map">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-0.143%2C51.506%2C-0.126%2C51.514&layer=mapnik"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <p>Email: info@tastybites.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tasty Bites. All rights reserved.</p>
+      </div>
+    </footer>
+    </div>
+
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="category.js"></script>
+  </body>
+</html>

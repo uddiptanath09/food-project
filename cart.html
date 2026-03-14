@@ -1,0 +1,23 @@
+<!-- Cart sidebar + overlay + toast (loaded via JS into category.html) -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h2>Cart</h2>
+    <button class="close-cart" id="closeCart">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <p class="empty-cart">Your cart is empty</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total: </span>
+      <span id="cartTotalPrice">₹0</span>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="toast" id="toast"></div>
